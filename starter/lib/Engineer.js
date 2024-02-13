@@ -24,3 +24,10 @@ class Engineer extends Employee {
         console.log(`Role: Engineer`);
     }
 }
+
+const engineer = new Engineer("Pete", 1, "pete@fakemail.com")
+
+engineer.getName();
+engineer.getId();
+engineer.getEmail();
+engineer.getRole();
