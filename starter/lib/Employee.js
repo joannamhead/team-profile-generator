@@ -11,26 +11,28 @@ class Employee {
           if (!email) {
             throw new Error("You are missing the email.");
           }
-          
+
         this.name = name;
         this.id = id;
         this.email = email
     }
 
     getName() {
-        console.log(this.name);
+        console.log(`Name: ${this.name}`);
     }
 
     getId() {
-        console.log(this.id);
+        console.log(`ID: ${this.id}`);
     }
 
     getEmail() {
-        console.log(this.email);
+        console.log(`Email: ${this.email}`);
     }
 
     getRole() {
-        console.log(this.role);
+        console.log(`Role: ${Employee}`);
     }
 
 }
+
+module.exports = Employee;
