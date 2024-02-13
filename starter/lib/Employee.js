@@ -30,7 +30,7 @@ class Employee {
     }
 
     getRole() {
-        console.log(`Role: ${Employee}`);
+        console.log(`Role: Employee`);
     }
 
 }

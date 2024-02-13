@@ -7,4 +7,20 @@ class Engineer extends Employee {
     this.id = 1;
     this.email = "jack@fakemail.com";
     }
+
+    getName() {
+        console.log(`Name: ${this.name}`);
+    }
+
+    getId() {
+        console.log(`ID: ${this.id}`);
+    }
+
+    getEmail() {
+        console.log(`Email: ${this.email}`);
+    }
+
+    getRole() {
+        console.log(`Role: Engineer`);
+    }
 }
