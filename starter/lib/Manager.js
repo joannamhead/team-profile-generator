@@ -3,6 +3,18 @@ const Employee = require("./Employee");
 
 class Manager extends Employee {
     constructor(name, id, email, officeNumber) {
+        if (!name) {
+            throw new Error("You are missing the name.");
+          }
+          if (!id) {
+            throw new Error("You are missing the ID.");
+          }
+          if (!email) {
+            throw new Error("You are missing the email.");
+          }
+          if (!officeNumber) {
+            throw new Error("You are missing the office number.")
+          }
     this.name = name;
     this.id = id;
     this.email = email;

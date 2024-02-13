@@ -3,12 +3,24 @@ const Employee = require("./Employee");
 
 class Engineer extends Employee {
     constructor(name, id, email, github) {
+        if (!name) {
+            throw new Error("You are missing the name.");
+          }
+          if (!id) {
+            throw new Error("You are missing the ID.");
+          }
+          if (!email) {
+            throw new Error("You are missing the email.");
+          }
+          if (!github) {
+            throw new Error("You are missing the GitHub username.")
+          }
+    
     this.name = name;
     this.id = id;
     this.email = email;
     this.github = github;
     }
-
 
     getName() {
         console.log(`Name: ${this.name}`);
