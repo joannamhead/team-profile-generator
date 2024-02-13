@@ -3,9 +3,9 @@ const Employee = require("./Employee");
 
 class Engineer extends Employee {
     constructor(name, id, email) {
-    this.name = "Jack"
+    this.name = "Pete"
     this.id = 1;
-    this.email = "jack@fakemail.com";
+    this.email = "pete@fakemail.com";
     }
 
     getName() {
