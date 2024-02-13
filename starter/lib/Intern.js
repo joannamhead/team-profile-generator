@@ -24,7 +24,7 @@ class Intern extends Employee {
     }
 }
 
-const intern = new Intern("Katarina", 2, "katarina@fakemail.com");
+const intern = new Intern("Katarina", 3, "katarina@fakemail.com");
 
 intern.printInfo();
 intern.getRole();
